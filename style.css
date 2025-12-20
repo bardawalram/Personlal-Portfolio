@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0f19;
+    color: #eaeaea;
+    line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* PROFILE PHOTO */
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #64ffda;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+    animation: popIn 1.2s ease;
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #9feaf9;
+}
+
+.links {
+    margin-top: 25px;
+}
+
+.links a {
+    margin: 10px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background: #64ffda;
+    color: #0b0f19;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+section {
+    max-width: 1100px;
+    margin: 90px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #64ffda;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    list-style: none;
+    margin: 8px;
+    padding: 10px 18px;
+    background: #161b2e;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.skills li:hover {
+    transform: scale(1.1);
+}
+
+/* CARDS */
+.card {
+    background: #161b2e;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+}
+
+.lift {
+    transition: all 0.4s ease;
+}
+
+.lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* PROJECT BUTTONS */
+.project-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    background: #64ffda;
+    color: #0b0f19;
+}
+
+.project-links .disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    border-style: dashed;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #1f2a44;
+}
+
+/* SCROLL ANIMATION */
+.fade-in {
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ============================= */
+/* 📱 MOBILE & TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+    section {
+        margin: 70px auto;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* BUTTONS */
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .links a {
+        width: 200px;
+        text-align: center;
+    }
+
+    /* SECTIONS */
+    section {
+        margin: 60px auto;
+        padding: 0 15px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    /* SKILLS */
+    .skills {
+        justify-content: center;
+    }
+
+    .skills li {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    /* CARDS */
+    .card {
+        padding: 20px;
+    }
+
+    /* PROJECT BUTTONS */
+    .project-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-links a {
+        width: 140px;
+        text-align: center;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .profile-pic {
+        width: 105px;
+        height: 105px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
