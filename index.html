@@ -5,113 +5,324 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bardawal Parshuram | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="hero fade-in">
-    <img src="assets/profile.jpg" alt="Bardawal Parshuram" class="profile-pic">
-    <h1>Bardawal Parshuram</h1>
-    <p>Software Engineer | Backend & ML Enthusiast</p>
-    <div class="links">
-        <a href="resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/bardawalram" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/parshuram" target="_blank">LinkedIn</a>
+<!-- PARTICLES CANVAS -->
+<canvas id="particles"></canvas>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-brand">
+        <span class="bracket">&lt;</span>BP<span class="bracket">/&gt;</span>
     </div>
+    <ul class="nav-links">
+        <li><a href="#about" data-num="01.">About</a></li>
+        <li><a href="#skills" data-num="02.">Skills</a></li>
+        <li><a href="#experience" data-num="03.">Experience</a></li>
+        <li><a href="#projects" data-num="04.">Projects</a></li>
+        <li><a href="#achievements" data-num="05.">Achievements</a></li>
+        <li><a href="#contact" data-num="06.">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+    <div class="hero-content fade-in">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="glitch" data-text="Bardawal Parshuram">Bardawal Parshuram</h1>
+        <div class="typing-wrapper">
+            <span class="typing-text" id="typing"></span>
+            <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-desc">
+            B.Tech ECE (Minor in AI) @ NIT Patna &bull; CGPA <span class="highlight">9.05/10</span>
+        </p>
+        <div class="links">
+            <a href="resume.pdf" target="_blank" class="btn-primary">
+                <span>Resume</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+            <a href="https://github.com/bardawalram" target="_blank" class="btn-outline">GitHub</a>
+            <a href="https://linkedin.com/in/parshuram" target="_blank" class="btn-outline">LinkedIn</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/profile.jpg" alt="Bardawal Parshuram" class="profile-pic">
 </header>
 
-<section class="reveal">
-    <h2>About Me</h2>
-    <p>
-       Final-year Electronics & Communication Engineering student at NIT Patna with a strong interest in Software Development and Machine Learning. Experienced in C++, Python, and ML-based projects, with 500+ DSA problems solved. Looking for SDE/ML roles in product-based companies and startups.
+<!-- ABOUT -->
+<section id="about" class="reveal">
+    <h2><span class="section-num">01.</span> About Me</h2>
+    <div class="about-content">
+        <p>
+            I'm a final-year ECE student at <span class="highlight">NIT Patna</span> with a Minor in AI.
+            I build full-stack applications with Django, React, and ML — from
+            <span class="highlight">voice-driven ERP systems</span> to
+            <span class="highlight">real-time fraud detection dashboards</span>.
+        </p>
+        <p>
+            Ranked in the <span class="highlight">top 5%</span> of my batch and have solved
+            <span class="highlight">1000+ DSA problems</span> across competitive programming platforms.
+            I'm passionate about building products that solve real-world problems.
+        </p>
+    </div>
 </section>
 
-<section class="reveal">
-    <h2>Skills</h2>
-    <ul class="skills">
-        <li>C++</li><li>Python</li><li>SQL</li><li>DSA</li>
-        <li>Flask</li><li>FastAPI</li><li>REST APIs</li>
-        <li>Machine Learning</li><li>Scikit-learn</li>
-        <li>Pandas</li><li>NumPy</li>
-        <li>HTML</li><li>CSS</li><li>JavaScript</li>
-        <li>Git & GitHub</li><li>DBMS</li><li>Operating Systems</li>
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+    <h2><span class="section-num">02.</span> Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">{ }</div>
+            <h3>Languages</h3>
+            <ul class="skills">
+                <li>C++</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>Verilog</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Backend</h3>
+            <ul class="skills">
+                <li>Django</li><li>Django REST Framework</li><li>PostgreSQL</li>
+                <li>REST APIs</li><li>JWT Auth</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">&lt;UI&gt;</div>
+            <h3>Frontend</h3>
+            <ul class="skills">
+                <li>React</li><li>Redux Toolkit</li><li>Tailwind CSS</li>
+                <li>HTML/CSS</li><li>Vite</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">ML</div>
+            <h3>ML / Data</h3>
+            <ul class="skills">
+                <li>Scikit-learn</li><li>NumPy</li><li>Pandas</li>
+                <li>Matplotlib</li><li>Streamlit</li><li>OpenAI Whisper</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">#_</div>
+            <h3>Tools</h3>
+            <ul class="skills">
+                <li>Git & GitHub</li><li>Docker</li><li>VS Code</li>
+                <li>Google Colab</li><li>Linux</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal">
+    <h2><span class="section-num">03.</span> Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot pulse"></div>
+            <div class="card glass lift">
+                <div class="card-header">
+                    <h3>Software Development Intern</h3>
+                    <span class="card-date">May 2025 - Jul 2025</span>
+                </div>
+                <span class="card-sub">Codetech IT Solutions, Hyderabad | Remote</span>
+                <ul class="card-list">
+                    <li>Engineered <strong>FraudSight</strong>, an end-to-end fraud detection application with data ingestion, preprocessing pipeline, real-time scoring engine, and interactive Streamlit dashboard.</li>
+                    <li>Built a transaction-scoring REST API and model-serving layer processing <strong>100K+ transactions</strong> with <strong>96.67% accuracy</strong>.</li>
+                    <li>Implemented structured logging, input validation, and modular architecture across the full stack.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+    <h2><span class="section-num">04.</span> Projects</h2>
+
+    <!-- Featured Project - Large Card -->
+    <div class="featured-project glass">
+        <div class="featured-label">
+            <span class="pulse-dot"></span> Featured Project
+        </div>
+        <div class="card-header">
+            <h3>ReATOA - Voice-Driven School ERP</h3>
+            <span class="card-date">Jan 2025 - Mar 2025</span>
+        </div>
+        <div class="tech-tags">
+            <span>Django</span><span>React</span><span>PostgreSQL</span>
+            <span>OpenAI Whisper</span><span>Redux</span><span>Docker</span>
+            <span>JWT</span><span>Tailwind CSS</span><span>WebSocket</span>
+        </div>
+        <ul class="card-list">
+            <li>Built a full-stack voice-driven ERP system enabling teachers to enter marks, record attendance, and query student data using natural speech commands processed by <strong>OpenAI Whisper</strong>.</li>
+            <li>Designed a Django REST Framework backend with <strong>18 database models</strong>, <strong>24+ API endpoints</strong>, JWT authentication, audit logging, and a voice-command processing pipeline with <strong>30+ intent types</strong>.</li>
+            <li>Developed a responsive React 18 frontend with <strong>12 pages</strong>, <strong>18 reusable components</strong>, Redux state management, and real-time audio recording via MediaRecorder API.</li>
+            <li>Implemented fee management module with PDF receipt generation, payment tracking, WebSocket real-time updates, and role-based access control for <strong>600+ student records</strong>.</li>
+        </ul>
+        <div class="project-stats">
+            <div class="stat"><span class="stat-num">18</span><span class="stat-label">Models</span></div>
+            <div class="stat"><span class="stat-num">24+</span><span class="stat-label">APIs</span></div>
+            <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Voice Intents</span></div>
+            <div class="stat"><span class="stat-num">600+</span><span class="stat-label">Students</span></div>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/bardawalram/Audio_to_Action" target="_blank" class="btn-primary">
+                <span>View Code</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="projects-grid">
+
+        <!-- Fraud Detection -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/Fraud-detection" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>Fraud Detection System</h3>
+            <p>ML pipeline on 100K+ financial transactions achieving 96.67% accuracy with a real-time Streamlit dashboard for live predictions and analytics.</p>
+            <div class="tech-tags">
+                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Pandas</span>
+            </div>
+        </div>
+
+        <!-- Greenhouse Gas -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/Greenhouse-Gas-Emission-Prediction" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>Greenhouse Gas Emission Prediction</h3>
+            <p>ML model forecasting supply chain emission factors using multi-year industrial data with an interactive Streamlit web app for predictions.</p>
+            <div class="tech-tags">
+                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Seaborn</span>
+            </div>
+        </div>
+
+        <!-- Algorithm Visualizer -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/Algorithm-Visualizer" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                    <a href="https://bardawalram.github.io/Algorithm-Visualizer/" target="_blank" title="Live Demo">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>Algorithm Visualizer</h3>
+            <p>Interactive web platform to visualize sorting & searching algorithms with step-by-step execution and speed control. Used by 100+ students.</p>
+            <div class="tech-tags">
+                <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+        </div>
+
+        <!-- UART -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/UART-Communication-Protocol" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>UART Communication Protocol</h3>
+            <p>Modular UART serial communication in Verilog with baud rate generator, transmitter, receiver, and testbench — FPGA/ASIC ready.</p>
+            <div class="tech-tags">
+                <span>Verilog</span><span>Vivado</span><span>FPGA</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="reveal">
+    <h2><span class="section-num">05.</span> Achievements</h2>
+    <div class="achievements-grid">
+        <div class="achievement-card glass" data-tilt>
+            <div class="achievement-number counter" data-target="1000">0</div>
+            <div class="achievement-plus">+</div>
+            <p>DSA problems solved across LeetCode, Codeforces, CodeChef, AtCoder & GFG</p>
+        </div>
+        <div class="achievement-card glass" data-tilt>
+            <div class="achievement-text-num">Top 5%</div>
+            <p>ECE batch at NIT Patna with CGPA 9.05/10</p>
+        </div>
+        <div class="achievement-card glass" data-tilt>
+            <div class="achievement-text-num">Gold</div>
+            <p>NPTEL "The Joy of Computing Using Python" — Top 5%</p>
+        </div>
+        <div class="achievement-card glass" data-tilt>
+            <div class="achievement-number counter" data-target="4">0</div>
+            <div class="achievement-plus"></div>
+            <p>Certifications — AWS, NPTEL Cloud, AI & Data Analytics, NPTEL Python</p>
+        </div>
+    </div>
+    <ul class="achievements-list">
+        <li>Participated in <strong>Adobe Hackathon</strong> and <strong>Amazon ML Challenge</strong></li>
+        <li>AWS Solutions Architecture — Forage Virtual Internship</li>
+        <li>AI & Data Analytics Virtual Internship — Edunet Foundation (AICTE & Shell India)</li>
     </ul>
 </section>
 
-<section class="reveal">
-    <h2>Experience</h2>
-    <div class="card lift">
-        <h3>Software Development Intern – Codetech IT Solutions</h3>
-        <span>May 2025 – July 2025 | Remote</span>
-        <p>
-            Built FraudSight, a complete fraud detection application including data ingestion,
-            preprocessing pipeline, ML-based fraud scoring engine, and a Streamlit UI.
-            Developed real-time prediction APIs with logging, validation, and modular architecture.
-        </p>
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+    <h2><span class="section-num">06.</span> Get In Touch</h2>
+    <p class="contact-intro">I'm currently looking for SDE / ML Engineering opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+    <div class="contact-grid">
+        <a href="mailto:bardawal729@gmail.com" class="contact-card glass">
+            <span class="contact-icon">@</span>
+            <span class="contact-label">Email</span>
+            <span>bardawal729@gmail.com</span>
+        </a>
+        <a href="tel:+919949540729" class="contact-card glass">
+            <span class="contact-icon">#</span>
+            <span class="contact-label">Phone</span>
+            <span>+91-9949540729</span>
+        </a>
+        <a href="https://github.com/bardawalram" target="_blank" class="contact-card glass">
+            <span class="contact-icon">&lt;/&gt;</span>
+            <span class="contact-label">GitHub</span>
+            <span>github.com/bardawalram</span>
+        </a>
+        <a href="https://linkedin.com/in/parshuram" target="_blank" class="contact-card glass">
+            <span class="contact-icon">in</span>
+            <span class="contact-label">LinkedIn</span>
+            <span>linkedin.com/in/parshuram</span>
+        </a>
     </div>
-</section>
-
-<section class="reveal">
-    <h2>Projects</h2>
-
-    <div class="card lift">
-        <h3>Fraud Detection System</h3>
-        <p>
-            Implemented a fraud detection pipeline on 100K+ financial transactions.
-            Applied feature engineering and imbalance handling techniques.
-            Achieved 96.67% accuracy using Random Forest and Logistic Regression models.
-            Deployed a real-time Streamlit dashboard for live predictions and analytics.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/bardawalram/Fraud-detection" target="_blank">GitHub</a>
-            <a href="#" class="disabled">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="card lift">
-        <h3>FraudSight (Internship Project)</h3>
-        <p>
-            Designed and developed an end-to-end fraud detection application.
-            Built internal transaction scoring APIs and model serving layer for real-time inference.
-            Owned the complete lifecycle from design to deployment.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/bardawalram/Fraud-detection" target="_blank">GitHub</a>
-            <a href="#" class="disabled">Live Demo</a>
-        </div>
-    </div>
-
-    <div class="card lift">
-        <h3>Algorithm Visualizer</h3>
-        <p>
-            Developed an interactive web platform to visualize algorithms like Binary Search and Bubble Sort.
-            Added step-by-step execution, speed control, and pseudocode highlighting.
-            Used by 100+ students for academic learning.
-        </p>
-        <div class="project-links">
-            <a href="https://github.com/bardawalram/Algorithm-Visualizer" target="_blank">GitHub</a>
-            <a href="https://bardawalram.github.io/Algorithm-Visualizer/" target="_blank">Live Demo</a>
-        </div>
-    </div>
-</section>
-
-<section class="reveal">
-    <h2>Achievements</h2>
-    <ul>
-        <li>1000+ DSA problems solved</li>
-        <li>Top 5% ECE batch – NIT Patna</li>
-        <li>NPTEL Gold Medalist</li>
-        <li>Adobe Hackathon & Amazon ML Challenge participant</li>
-    </ul>
-</section>
-
-<section class="reveal">
-    <h2>Contact</h2>
-    <p>Email: bardawal729@gmail.com</p>
-    <p>Phone: +91-9949540729</p>
 </section>
 
 <footer>
-    <p>© 2025 Bardawal Parshuram</p>
+    <p>Designed & Built by <span class="highlight">Bardawal Parshuram</span></p>
+    <p class="footer-sub">&copy; 2026</p>
 </footer>
 
 <script src="script.js"></script>
