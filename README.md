@@ -3,7 +3,7 @@
 This repository contains my **personal portfolio website**, built to showcase my skills, projects, and experience as a **Software Engineer (Backend & Machine Learning)**.
 
 🔗 **Live Website:**  
-https://bardawalram.github.io/portfolio/
+https://bardawalram.github.io/Personlal-Portfolio/
 
 ---
 
