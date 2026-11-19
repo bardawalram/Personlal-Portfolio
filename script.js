@@ -109,11 +109,11 @@ document.addEventListener('mouseleave', () => {
 // ============ TYPING ANIMATION ============
 const typingEl = document.getElementById('typing');
 const phrases = [
-    'Full-Stack Developer',
-    'Machine Learning Engineer',
-    'Backend Enthusiast',
-    'Problem Solver — 1000+ DSA',
-    'Django + React Builder'
+    'Software Engineer (SDE-1)',
+    'Backend Engineer: Django + DRF',
+    'Auth, RBAC & Observability',
+    'Full-Stack: Django + React',
+    'Problem Solver: 1000+ DSA'
 ];
 let phraseIndex = 0;
 let charIndex = 0;
