@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bardawal Parshuram | Portfolio</title>
+    <title>Bardawal Parshuram | Software Engineer</title>
+    <meta name="description" content="Bardawal Parshuram - Software Engineer (SDE-1) building secure, observable backend systems with Python, Django and React.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -22,9 +23,9 @@
     </div>
     <ul class="nav-links">
         <li><a href="#about" data-num="01.">About</a></li>
-        <li><a href="#skills" data-num="02.">Skills</a></li>
-        <li><a href="#experience" data-num="03.">Experience</a></li>
-        <li><a href="#projects" data-num="04.">Projects</a></li>
+        <li><a href="#experience" data-num="02.">Experience</a></li>
+        <li><a href="#projects" data-num="03.">Projects</a></li>
+        <li><a href="#skills" data-num="04.">Skills</a></li>
         <li><a href="#achievements" data-num="05.">Achievements</a></li>
         <li><a href="#contact" data-num="06.">Contact</a></li>
     </ul>
@@ -36,6 +37,7 @@
 <!-- HERO -->
 <header class="hero" id="hero">
     <div class="hero-content fade-in">
+        <span class="status-pill"><span class="pulse-dot"></span> Open to SDE-1 / Backend roles</span>
         <p class="hero-greeting">Hi, my name is</p>
         <h1 class="glitch" data-text="Bardawal Parshuram">Bardawal Parshuram</h1>
         <div class="typing-wrapper">
@@ -43,7 +45,9 @@
             <span class="cursor-blink">|</span>
         </div>
         <p class="hero-desc">
-            B.Tech ECE (Minor in AI) @ NIT Patna &bull; CGPA <span class="highlight">9.05/10</span>
+            Software Engineer (SDE-1) at <span class="highlight">K12 Techno Services</span>, building secure,
+            observable backend systems for a <span class="highlight">340-branch school network</span>.
+            B.Tech ECE @ NIT Patna &bull; CGPA <span class="highlight">9.17/10</span>
         </p>
         <div class="links">
             <a href="resume.pdf" target="_blank" class="btn-primary">
@@ -62,76 +66,89 @@
     <img src="assets/profile.jpg" alt="Bardawal Parshuram" class="profile-pic">
 </header>
 
+<!-- IMPACT STRIP -->
+<section class="impact reveal" aria-label="Impact at a glance">
+    <div class="impact-grid">
+        <div class="impact-card glass">
+            <span class="impact-num">~250</span>
+            <span class="impact-label">ERP endpoints secured with browser-bound JWT + RBAC</span>
+        </div>
+        <div class="impact-card glass">
+            <span class="impact-num">85k</span>
+            <span class="impact-label">requests/min monitored with Grafana, Loki &amp; Prometheus</span>
+        </div>
+        <div class="impact-card glass">
+            <span class="impact-num">4,709</span>
+            <span class="impact-label">designations covered by automated mailbox provisioning</span>
+        </div>
+        <div class="impact-card glass">
+            <span class="impact-num">27k</span>
+            <span class="impact-label">users under brand-level data isolation</span>
+        </div>
+    </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about" class="reveal">
     <h2><span class="section-num">01.</span> About Me</h2>
     <div class="about-content">
         <p>
-            I'm a final-year ECE student at <span class="highlight">NIT Patna</span> with a Minor in AI.
-            I build full-stack applications with Django, React, and ML — from
-            <span class="highlight">voice-driven ERP systems</span> to
-            <span class="highlight">real-time fraud detection dashboards</span>.
+            I'm a backend-focused full-stack engineer at <span class="highlight">K12 Techno Services (Orchids International School)</span>,
+            working across the ERP, CRM, Finance and HRMS platforms. I own the Expansion module end to end and build the
+            platform pieces every app depends on: <span class="highlight">authentication and access control</span>,
+            <span class="highlight">approval-workflow engines</span>, <span class="highlight">observability</span> and
+            third-party integrations with Google Workspace, SAP and AWS Rekognition.
         </p>
         <p>
-            Ranked in the <span class="highlight">top 5%</span> of my batch and have solved
-            <span class="highlight">1000+ DSA problems</span> across competitive programming platforms.
-            I'm passionate about building products that solve real-world problems.
+            I graduated from <span class="highlight">NIT Patna</span> (B.Tech ECE, Minor in CSE (AI)) in the
+            <span class="highlight">top 5%</span> of my batch, and I've solved <span class="highlight">1000+ DSA problems</span>.
+            I care about systems that fail loudly, measure honestly and stay simple to operate.
         </p>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="reveal">
-    <h2><span class="section-num">02.</span> Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-category" data-tilt>
-            <div class="skill-icon">{ }</div>
-            <h3>Languages</h3>
-            <ul class="skills">
-                <li>C++</li><li>Python</li><li>JavaScript</li><li>SQL</li><li>Verilog</li>
-            </ul>
-        </div>
-        <div class="skill-category" data-tilt>
-            <div class="skill-icon">&lt;/&gt;</div>
-            <h3>Backend</h3>
-            <ul class="skills">
-                <li>Django</li><li>Django REST Framework</li><li>PostgreSQL</li>
-                <li>REST APIs</li><li>JWT Auth</li>
-            </ul>
-        </div>
-        <div class="skill-category" data-tilt>
-            <div class="skill-icon">&lt;UI&gt;</div>
-            <h3>Frontend</h3>
-            <ul class="skills">
-                <li>React</li><li>Redux Toolkit</li><li>Tailwind CSS</li>
-                <li>HTML/CSS</li><li>Vite</li>
-            </ul>
-        </div>
-        <div class="skill-category" data-tilt>
-            <div class="skill-icon">ML</div>
-            <h3>ML / Data</h3>
-            <ul class="skills">
-                <li>Scikit-learn</li><li>NumPy</li><li>Pandas</li>
-                <li>Matplotlib</li><li>Streamlit</li><li>OpenAI Whisper</li>
-            </ul>
-        </div>
-        <div class="skill-category" data-tilt>
-            <div class="skill-icon">#_</div>
-            <h3>Tools</h3>
-            <ul class="skills">
-                <li>Git & GitHub</li><li>Docker</li><li>VS Code</li>
-                <li>Google Colab</li><li>Linux</li>
-            </ul>
-        </div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="reveal">
-    <h2><span class="section-num">03.</span> Experience</h2>
+    <h2><span class="section-num">02.</span> Experience</h2>
     <div class="timeline">
         <div class="timeline-item">
             <div class="timeline-dot pulse"></div>
+            <div class="card glass lift">
+                <div class="card-header">
+                    <h3>Software Development Engineer I</h3>
+                    <span class="card-date">May 2026 - Present</span>
+                </div>
+                <span class="card-sub">K12 Techno Services (Orchids International School) | On-site</span>
+                <ul class="card-list">
+                    <li>Secured <strong>~250 ERP endpoints</strong> by binding each JWT to an HttpOnly browser-fingerprint cookie and enforcing per-module <strong>RBAC in Django middleware</strong> with a Redis-cached access matrix.</li>
+                    <li>Built <strong>production observability</strong> (Loki, Prometheus, Grafana) at ~85k req/min: 4 dashboards and ~70 Slack alerts; cut logs <strong>6 to 2 GB/day</strong> and alert noise <strong>400 to 80/week</strong>.</li>
+                    <li>Automated <strong>mailbox creation for every new joiner</strong> with a multi-tenant Google Workspace Directory API client (3 tenants, 4,709 designations, 229 branches); self-serve reset served <strong>500 resets</strong>.</li>
+                    <li>Built a <strong>Contract Lifecycle Management</strong> module from scratch: 23 REST APIs, an 8-stage approval workflow, 6 roles and Celery renewal reminders.</li>
+                    <li>Own the <strong>Expansion</strong> module (multi-stage approvals with parallel 2-of-3 voting) and delivered <strong>brand-level data isolation</strong> for 27k users across ERP, CRM, Finance and HRMS.</li>
+                    <li>Added <strong>face liveness detection</strong> and Aadhaar-verified staff registration (605 requests) on AWS Rekognition across 194 campuses.</li>
+                </ul>
+                <div class="tech-tags">
+                    <span>Django</span><span>DRF</span><span>React</span><span>PostgreSQL</span><span>Redis</span>
+                    <span>Celery</span><span>MongoDB</span><span>Grafana</span><span>AWS Rekognition</span>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card glass lift">
+                <div class="card-header">
+                    <h3>Software Development Engineer Intern</h3>
+                    <span class="card-date">Jan 2026 - May 2026</span>
+                </div>
+                <span class="card-sub">K12 Techno Services (Orchids International School) | On-site</span>
+                <ul class="card-list">
+                    <li>Built the Expansion deal lifecycle, document management and payment-milestone approvals in <strong>Django REST Framework</strong> and <strong>React</strong>.</li>
+                    <li>Built <strong>Rent Management</strong> for Finance (GST/TDS, dues, payments) and integrated <strong>SAP</strong> purchase requisitions with a background vendor sync into CRM.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
             <div class="card glass lift">
                 <div class="card-header">
                     <h3>Software Development Intern</h3>
@@ -139,9 +156,7 @@
                 </div>
                 <span class="card-sub">Codetech IT Solutions, Hyderabad | Remote</span>
                 <ul class="card-list">
-                    <li>Engineered <strong>FraudSight</strong>, an end-to-end fraud detection application with data ingestion, preprocessing pipeline, real-time scoring engine, and interactive Streamlit dashboard.</li>
-                    <li>Built a transaction-scoring REST API and model-serving layer processing <strong>100K+ transactions</strong> with <strong>96.67% accuracy</strong>.</li>
-                    <li>Implemented structured logging, input validation, and modular architecture across the full stack.</li>
+                    <li>Engineered <strong>FraudSight</strong>, an end-to-end fraud detection application with a preprocessing pipeline, real-time scoring API and Streamlit dashboard.</li>
                 </ul>
             </div>
         </div>
@@ -150,7 +165,7 @@
 
 <!-- PROJECTS -->
 <section id="projects" class="reveal">
-    <h2><span class="section-num">04.</span> Projects</h2>
+    <h2><span class="section-num">03.</span> Projects</h2>
 
     <!-- Featured Project - Large Card -->
     <div class="featured-project glass">
@@ -158,36 +173,68 @@
             <span class="pulse-dot"></span> Featured Project
         </div>
         <div class="card-header">
-            <h3>ReATOA - Voice-Driven School ERP</h3>
-            <span class="card-date">Jan 2025 - Mar 2025</span>
+            <h3>ATOA (Audio to Action) - Voice-Driven School ERP</h3>
+            <span class="card-date">Jan 2026 - Apr 2026</span>
         </div>
         <div class="tech-tags">
             <span>Django</span><span>React</span><span>PostgreSQL</span>
-            <span>OpenAI Whisper</span><span>Redux</span><span>Docker</span>
-            <span>JWT</span><span>Tailwind CSS</span><span>WebSocket</span>
+            <span>OpenAI Whisper</span><span>Redux</span><span>JWT</span>
         </div>
         <ul class="card-list">
-            <li>Built a full-stack voice-driven ERP system enabling teachers to enter marks, record attendance, and query student data using natural speech commands processed by <strong>OpenAI Whisper</strong>.</li>
-            <li>Designed a Django REST Framework backend with <strong>18 database models</strong>, <strong>24+ API endpoints</strong>, JWT authentication, audit logging, and a voice-command processing pipeline with <strong>30+ intent types</strong>.</li>
-            <li>Developed a responsive React 18 frontend with <strong>12 pages</strong>, <strong>18 reusable components</strong>, Redux state management, and real-time audio recording via MediaRecorder API.</li>
-            <li>Implemented fee management module with PDF receipt generation, payment tracking, WebSocket real-time updates, and role-based access control for <strong>600+ student records</strong>.</li>
+            <li>Teachers enter marks, record attendance and look up students by speaking; commands are transcribed by <strong>OpenAI Whisper</strong> and mapped to ERP actions through a custom intent-extraction layer.</li>
+            <li>Django REST Framework backend with <strong>JWT authentication</strong>, an audit log and a confirmation step before any command runs.</li>
+            <li>React 18 frontend with Redux state management and in-browser audio recording via the MediaRecorder API.</li>
         </ul>
         <div class="project-stats">
             <div class="stat"><span class="stat-num">18</span><span class="stat-label">Models</span></div>
             <div class="stat"><span class="stat-num">24+</span><span class="stat-label">APIs</span></div>
             <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Voice Intents</span></div>
-            <div class="stat"><span class="stat-num">600+</span><span class="stat-label">Students</span></div>
         </div>
         <div class="project-links">
             <a href="https://github.com/bardawalram/Audio_to_Action" target="_blank" class="btn-primary">
                 <span>View Code</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
+            <a href="https://audio-to-action.vercel.app" target="_blank" class="btn-outline">Live Demo</a>
         </div>
     </div>
 
     <!-- Project Grid -->
     <div class="projects-grid">
+
+        <!-- Finance Backend -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/zorvyn-finance-backend" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>Finance Dashboard Backend</h3>
+            <p>REST API with JWT authentication, role-based access control, financial record management and dashboard summary endpoints.</p>
+            <div class="tech-tags">
+                <span>Django</span><span>DRF</span><span>SimpleJWT</span>
+            </div>
+        </div>
+
+        <!-- Redrob Ranker -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/redrob-ranker" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>Redrob Hackathon Ranker</h3>
+            <p>Explainable 3-stage ranker that streams 100,000 candidates and picks the top 100 for a job description in about 20 seconds.</p>
+            <div class="tech-tags">
+                <span>Python</span><span>Ranking</span><span>Streaming</span>
+            </div>
+        </div>
 
         <!-- Fraud Detection -->
         <div class="project-card glass lift" data-tilt>
@@ -200,26 +247,9 @@
                 </div>
             </div>
             <h3>Fraud Detection System</h3>
-            <p>ML pipeline on 100K+ financial transactions achieving 96.67% accuracy with a real-time Streamlit dashboard for live predictions and analytics.</p>
+            <p>ML pipeline on 100K+ financial transactions with class-imbalance handling, 96.67% accuracy and a real-time Streamlit dashboard.</p>
             <div class="tech-tags">
                 <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Pandas</span>
-            </div>
-        </div>
-
-        <!-- Greenhouse Gas -->
-        <div class="project-card glass lift" data-tilt>
-            <div class="project-card-top">
-                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
-                <div class="project-card-links">
-                    <a href="https://github.com/bardawalram/Greenhouse-Gas-Emission-Prediction" target="_blank" title="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-                    </a>
-                </div>
-            </div>
-            <h3>Greenhouse Gas Emission Prediction</h3>
-            <p>ML model forecasting supply chain emission factors using multi-year industrial data with an interactive Streamlit web app for predictions.</p>
-            <div class="tech-tags">
-                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Seaborn</span>
             </div>
         </div>
 
@@ -237,9 +267,26 @@
                 </div>
             </div>
             <h3>Algorithm Visualizer</h3>
-            <p>Interactive web platform to visualize sorting & searching algorithms with step-by-step execution and speed control. Used by 100+ students.</p>
+            <p>Interactive platform to visualise sorting and searching algorithms with step-by-step execution, speed control and pseudocode highlighting.</p>
             <div class="tech-tags">
                 <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+        </div>
+
+        <!-- Greenhouse Gas -->
+        <div class="project-card glass lift" data-tilt>
+            <div class="project-card-top">
+                <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2v11z"/></svg>
+                <div class="project-card-links">
+                    <a href="https://github.com/bardawalram/Greenhouse-Gas-Emission-Prediction" target="_blank" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+            <h3>Greenhouse Gas Emission Prediction</h3>
+            <p>ML model forecasting supply-chain emission factors from multi-year industrial data, with an interactive Streamlit app.</p>
+            <div class="tech-tags">
+                <span>Python</span><span>Scikit-learn</span><span>Streamlit</span>
             </div>
         </div>
 
@@ -254,10 +301,61 @@
                 </div>
             </div>
             <h3>UART Communication Protocol</h3>
-            <p>Modular UART serial communication in Verilog with baud rate generator, transmitter, receiver, and testbench — FPGA/ASIC ready.</p>
+            <p>Modular UART serial communication in Verilog with baud-rate generator, transmitter, receiver and testbench.</p>
             <div class="tech-tags">
                 <span>Verilog</span><span>Vivado</span><span>FPGA</span>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+    <h2><span class="section-num">04.</span> Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">{ }</div>
+            <h3>Languages</h3>
+            <ul class="skills">
+                <li>Python</li><li>JavaScript</li><li>SQL</li><li>C++</li><li>HTML/CSS</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Backend</h3>
+            <ul class="skills">
+                <li>Django</li><li>Django REST Framework</li><li>Celery</li><li>RabbitMQ</li>
+                <li>JWT Auth</li><li>RBAC</li><li>REST API Design</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">DB</div>
+            <h3>Databases</h3>
+            <ul class="skills">
+                <li>PostgreSQL</li><li>MongoDB</li><li>Redis</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">&lt;UI&gt;</div>
+            <h3>Frontend</h3>
+            <ul class="skills">
+                <li>React 18</li><li>Redux</li><li>Ant Design</li><li>Axios</li><li>Vite</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">#_</div>
+            <h3>Monitoring &amp; Tools</h3>
+            <ul class="skills">
+                <li>Grafana</li><li>Loki</li><li>Prometheus</li><li>GitLab CI</li><li>Git</li><li>Postman</li>
+            </ul>
+        </div>
+        <div class="skill-category" data-tilt>
+            <div class="skill-icon">AI</div>
+            <h3>Integrations &amp; AI</h3>
+            <ul class="skills">
+                <li>AWS Rekognition</li><li>Google Workspace API</li><li>SAP</li><li>OpenAI Whisper</li>
+                <li>Scikit-learn</li><li>OpenAI Codex</li><li>GitHub Copilot</li>
+            </ul>
         </div>
     </div>
 </section>
@@ -269,38 +367,38 @@
         <div class="achievement-card glass" data-tilt>
             <div class="achievement-number counter" data-target="1000">0</div>
             <div class="achievement-plus">+</div>
-            <p>DSA problems solved across LeetCode, Codeforces, CodeChef, AtCoder & GFG</p>
+            <p>DSA problems solved across LeetCode, Codeforces, CodeChef, AtCoder &amp; GFG</p>
         </div>
         <div class="achievement-card glass" data-tilt>
             <div class="achievement-text-num">Top 5%</div>
-            <p>ECE batch at NIT Patna with CGPA 9.05/10</p>
+            <p>ECE batch at NIT Patna with CGPA 9.17/10</p>
         </div>
         <div class="achievement-card glass" data-tilt>
             <div class="achievement-text-num">Gold</div>
-            <p>NPTEL "The Joy of Computing Using Python" — Top 5%</p>
+            <p>NPTEL "The Joy of Computing Using Python"</p>
         </div>
         <div class="achievement-card glass" data-tilt>
             <div class="achievement-number counter" data-target="4">0</div>
             <div class="achievement-plus"></div>
-            <p>Certifications — AWS, NPTEL Cloud, AI & Data Analytics, NPTEL Python</p>
+            <p>Certifications: AWS, NPTEL Cloud, AI &amp; Data Analytics, NPTEL Python</p>
         </div>
     </div>
     <ul class="achievements-list">
-        <li>Participated in <strong>Adobe Hackathon</strong> and <strong>Amazon ML Challenge</strong></li>
-        <li>AWS Solutions Architecture — Forage Virtual Internship</li>
-        <li>AI & Data Analytics Virtual Internship — Edunet Foundation (AICTE & Shell India)</li>
+        <li>Participated in the <strong>Adobe Hackathon</strong> and <strong>Amazon ML Challenge</strong></li>
+        <li>AWS Solutions Architecture: Forage Virtual Internship (Aug 2025)</li>
+        <li>AI &amp; Data Analytics Virtual Internship: Edunet Foundation, AICTE &amp; Shell India (Jul 2025)</li>
     </ul>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="reveal">
     <h2><span class="section-num">06.</span> Get In Touch</h2>
-    <p class="contact-intro">I'm currently looking for SDE / ML Engineering opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+    <p class="contact-intro">I'm open to SDE-1 and backend engineering roles. If you're hiring, or just want to talk about backend systems, my inbox is open.</p>
     <div class="contact-grid">
-        <a href="mailto:bardawal729@gmail.com" class="contact-card glass">
+        <a href="mailto:bardawalparshuram04@gmail.com" class="contact-card glass">
             <span class="contact-icon">@</span>
             <span class="contact-label">Email</span>
-            <span>bardawal729@gmail.com</span>
+            <span>bardawalparshuram04@gmail.com</span>
         </a>
         <a href="tel:+919949540729" class="contact-card glass">
             <span class="contact-icon">#</span>
@@ -312,7 +410,7 @@
             <span class="contact-label">GitHub</span>
             <span>github.com/bardawalram</span>
         </a>
-        <a href="https://linkedin.com/in/parshuram" target="_blank" class="contact-card glass">
+        <a href="https://www.linkedin.com/in/bardawal-parshuram-15a0982ba/" target="_blank" class="contact-card glass">
             <span class="contact-icon">in</span>
             <span class="contact-label">LinkedIn</span>
             <span>linkedin.com/in/parshuram</span>
@@ -321,7 +419,7 @@
 </section>
 
 <footer>
-    <p>Designed & Built by <span class="highlight">Bardawal Parshuram</span></p>
+    <p>Designed &amp; Built by <span class="highlight">Bardawal Parshuram</span></p>
     <p class="footer-sub">&copy; 2026</p>
 </footer>
 
